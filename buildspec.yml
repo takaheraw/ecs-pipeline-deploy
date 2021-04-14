@@ -9,6 +9,7 @@ phases:
   build:
     commands:
       - cd ./docker; docker-compose build
+      - cd ../
       - docker tag ecs-pipeline-deploy-nginx:$IMAGE_TAG $IMAGE_URI_NGINX
   post_build:
     commands:
