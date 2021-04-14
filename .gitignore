@@ -29,4 +29,5 @@ override.tf.json
 # example: *tfplan*
 
 .envrc
-secrets
+/secrets/*
+!/secrets/.gitkeep
