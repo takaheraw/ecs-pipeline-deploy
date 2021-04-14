@@ -3,7 +3,7 @@ version: "3"
 services:
   nginx:
     build:
-      context: .
+      context: ../
       dockerfile: ./docker/nginx/Dockerfile
     image: ecs-pipeline-deploy-nginx
     ports:
