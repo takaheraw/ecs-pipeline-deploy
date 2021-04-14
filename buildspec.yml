@@ -8,7 +8,7 @@ phases:
       - $(aws ecr get-login --no-include-email --region $AWS_DEFAULT_REGION)
   build:
     commands:
-      - docker-compose build
+      - cd ./docker; docker-compose build
       - docker tag ecs-pipeline-deploy-nginx:$IMAGE_TAG $IMAGE_URI_NGINX
   post_build:
     commands:
